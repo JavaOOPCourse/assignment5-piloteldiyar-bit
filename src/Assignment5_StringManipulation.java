@@ -50,6 +50,7 @@ public class Assignment5_StringManipulation {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
+        // TODO: Подсчитать количество гласных (a, e, i, o, u)
         int count = 0;
         for (int i = 0; i < input.length(); i++) {
             char c = Character.toLowerCase(input.charAt(i));
@@ -66,6 +67,7 @@ public class Assignment5_StringManipulation {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
+        // TODO: Вывести строку в обратном порядке
         String reversed = "";
         for (int i = input.length() - 1; i >= 0; i--) {
             reversed = reversed + input.charAt(i);
@@ -79,12 +81,8 @@ public class Assignment5_StringManipulation {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
-        String lower = input.toLowerCase();
-        String reversed = "";
-        for (int i = lower.length() - 1; i >= 0; i--) {
-            reversed = reversed + lower.charAt(i);
-        }
-        boolean isPalindrome = lower.equals(reversed);
+        // TODO: Проверить, является ли строка палиндромом (игнорировать регистр)
+        boolean isPalindrome = false;
 
         System.out.println(isPalindrome ? "Yes" : "No");
     }
@@ -108,6 +106,7 @@ public class Assignment5_StringManipulation {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
+        // TODO: Удалить все пробелы из строки
         String noSpaces = "";
         for (int i = 0; i < input.length(); i++) {
             if (input.charAt(i) != ' ') {
@@ -123,7 +122,7 @@ public class Assignment5_StringManipulation {
         System.out.print("Enter a sentence: ");
         String sentence = scanner.nextLine();
 
-        String[] words = sentence.split(" ");
+        // TODO: Преобразовать первую букву каждого слова в заглавную
         String result = "";
         for (int i = 0; i < words.length; i++) {
             if (words[i].length() > 0) {
